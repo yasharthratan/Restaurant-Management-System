@@ -5,10 +5,10 @@ M1 DB 10,13,10,13,'                 ****Welcome to The Restaurant****$',10,13
 M2 DB 10,13,10,13,'Enter your Choice $'
 
 M3 DB 10,13,'  **                 1.Breakfast Menu          **$' 
-M4 DB 10,13,'  **                 2.Lunce Menu              **$'
+M4 DB 10,13,'  **                 2.Lunch Menu              **$'
 MS5 DB 10,13,'  **                 3.Dinner Menu             **$'
 M5 DB 10,13,'  **                 4.Snacks                  **$'
-M6 DB 10,13,'  **                 5.Sweets                  **$'
+M6 DB 10,13,'  **                 5.Deserts                 **$'
 M7 DB 10,13,'  **                 6.Drinks                  **$'  
                
                
@@ -27,7 +27,7 @@ M17 DB 10,13,'  **           9.Pav Bhaji                60/-                    
 
  
 
-;lunch & dinner 
+;lunch
 
 M25 DB 10,13,'  **  1.Mutton Biryani                         90/-                **$' 
 M26 DB 10,13,'  **  2.Chicken Biryani                        90/-                **$' 
@@ -63,7 +63,7 @@ M44 DB 10,13,'  **  4.Brownie           5/-                 **$'
 
 
 
-;sweets
+;deserts
 M45 DB 10,13,'  **  1.Jalebi         50/-                   **$' 
 M46 DB 10,13,'  **  2.Pudding        50/-                   **$'
 M47 DB 10,13,'  **  3.Ice Cream      50/-                   **$'
@@ -183,7 +183,7 @@ MAIN PROC
     SUB BH,48
     
     CMP BH,1
-    JE BREATFAST
+    JE BREAKFAST
     
     CMP BH,2
     JE LD   
@@ -197,7 +197,7 @@ MAIN PROC
      
      
     CMP BH,5
-    JE SWEATMEAT
+    JE DESERT
     
     CMP BH,6
     JE DRINKS
@@ -208,7 +208,7 @@ MAIN PROC
        
     
     
-   BREATFAST:
+   BREAKFAST:
     
     
     LEA DX,M8    ;BREATFAST STARTS
@@ -522,10 +522,10 @@ MAIN PROC
     
     
     
-  SWEATMEAT:
+  DESERT:
   
     LEA DX,M8
-    MOV AH,9        ;SWEAT MEAT    STARTS
+    MOV AH,9        ;DESERT    STARTS
     INT 21H 
     
     LEA DX,SEJ ;NEWLINE
