@@ -27,7 +27,7 @@ M17 DB 10,13,'  **           9.Pav Bhaji                60/-                    
 
  
 
-;lunch & dinner 
+;lunch
 
 M25 DB 10,13,'  **  1.Mutton Biryani                         90/-                **$' 
 M26 DB 10,13,'  **  2.Chicken Biryani                        90/-                **$' 
@@ -63,7 +63,7 @@ M44 DB 10,13,'  **  4.Brownie           5/-                 **$'
 
 
 
-;sweets
+;deserts
 M45 DB 10,13,'  **  1.Jalebi         50/-                   **$' 
 M46 DB 10,13,'  **  2.Pudding        50/-                   **$'
 M47 DB 10,13,'  **  3.Ice Cream      50/-                   **$'
