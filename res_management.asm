@@ -183,7 +183,7 @@ MAIN PROC
     SUB BH,48
     
     CMP BH,1
-    JE BREATFAST
+    JE BREAKFAST
     
     CMP BH,2
     JE LD   
@@ -197,7 +197,7 @@ MAIN PROC
      
      
     CMP BH,5
-    JE SWEATMEAT
+    JE DESERT
     
     CMP BH,6
     JE DRINKS
@@ -208,7 +208,7 @@ MAIN PROC
        
     
     
-   BREATFAST:
+   BREAKFAST:
     
     
     LEA DX,M8    ;BREATFAST STARTS
@@ -522,10 +522,10 @@ MAIN PROC
     
     
     
-  SWEATMEAT:
+  DESERT:
   
     LEA DX,M8
-    MOV AH,9        ;SWEAT MEAT    STARTS
+    MOV AH,9        ;DESERT    STARTS
     INT 21H 
     
     LEA DX,SEJ ;NEWLINE
