@@ -85,6 +85,17 @@ M54 DB 10,13,'  **  6.Tea          5/-                      **$'
 M55 DB 10,13,10,13,'***&&INVALID ENTRY&&***$'
 M56 DB 10,13,'      ***&&Try Again&&***$'
 
+M57 DB 10,13,10,13,'Enter your order: $'
+M58 DB 10,13,'Quantity: $'
+M59 DB 10,13,'Total Price: $'
+
+
+DRINK DB ?
+QUANTITY DB ?
+
+
+M60 DB 10,13,10,13,'1.Go Back to Main Menu$'
+M61 DB 10,13,'2.EXIT$'
 
 ;STAR RESIZE
 
